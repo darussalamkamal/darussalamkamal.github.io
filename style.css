@@ -1,0 +1,136 @@
+/* utilitis */
+
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #e71616;
+    border-right-color: #16e739;
+    border-bottom-color: #ffee00;
+    animation:puter .8s linear infinite;
+}
+
+@keyframes puter{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* view all divace  */
+.cantion{
+    position : absolute;
+    z-index : 2;
+}
+
+.carousel-item:nth-child(2){
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0, 0, 0, 0.8) 100%), url(http://localhost/pontrenmvc/public/assets/img/sampul/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height : 100vh;
+}
+
+.carousel-item:nth-child(3){
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0, 0, 0, 0.8) 100%), url(http://localhost/pontrenmvc/public/assets/img/sampul/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height : 100vh;
+}
+
+.carousel-item:nth-child(4){
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgb(0, 0, 0, 0.8) 100%), url(http://localhost/pontrenmvc/public/assets/img/sampul/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height : 100vh;
+}
+
+.wallpaper{
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 100%, rgb(0, 0, 0, 0.9) 100%), url(http://localhost/pontrenmvc/public/assets/profile/wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.btn{
+    border-radius: 100px;
+}
+
+/* for all galery */
+.p-galery{
+    padding : 20px 0px;
+}
+
+.img{
+    width: 100%;
+    height: 250px;
+}
+
+/*for all berita*/
+
+.berita-utama{
+    width: 100%;
+    height: 70vh;
+}
+
+/* mini devices */
+@media (min-width: 100px) and (max-width: 575.98px) {
+    .jas-center{
+        text-align: center !important;
+    }
+
+    .card-m{
+        display: none;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .jas-center{
+        text-align: center !important;
+    }
+
+    .card-m{
+        display: none;
+    }
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .jas-center{
+        text-align: center !important;
+    }
+
+    .card-m{
+        display: none;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card-hid{
+        display: none;
+    }
+}
